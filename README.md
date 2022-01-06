@@ -6,7 +6,7 @@ This is a couse project of the Space Robot course at the Department of Automatio
 
 In this course project, we propose a scheme for capturing a target satellite out of control using a space robot. The space robot is a service satellite with two robot manipulators. During the on-orbit service, the space robot needs to capture the disabled and spinning target satellite, stop its spinning, restabilize it, and fix it up. We design the robot mechanics and the gripper mechanics, analyze the workspace of the manipulators, and simulate the target capture process based on the PyBullet simulator.
 
-**Video URL**: https://player.bilibili.com/player.html?aid=252657952&bvid=BV1jY411p7Nk&cid=471247927&page=1
+**Video URL**: https://www.bilibili.com/video/BV1jY411p7Nk?zw
 
 
 ## Dependencies
