@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="gripper3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="6.9389E-18 5.5511E-17 0.079281"
+        rpy="0 0 0" />
+      <mass
+        value="3.5364" />
+      <inertia
+        ixx="0.022721"
+        ixy="5.9967E-19"
+        ixz="2.4386E-18"
+        iyy="0.029708"
+        iyz="9.958E-20"
+        izz="0.021937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="base_color">
+        <color
+          rgba="0.41 0.94 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-1.7347E-17 0 0.023558"
+        rpy="0 0 0" />
+      <mass
+        value="0.15573" />
+      <inertia
+        ixx="0.00013315"
+        ixy="-1.0547E-20"
+        ixz="-1.3154E-19"
+        iyy="0.00018543"
+        iyz="-1.5013E-20"
+        izz="0.00021094" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper3/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="link_color">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper3/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="prismatic">
+    <origin
+      xyz="0 0 0.14917"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="100"
+      velocity="1000" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.083543 0.044291 -0.03"
+        rpy="0 0 0" />
+      <mass
+        value="0.25411" />
+      <inertia
+        ixx="0.00069675"
+        ixy="-0.00055583"
+        ixz="3.2874E-20"
+        iyy="0.00070744"
+        iyz="3.5255E-20"
+        izz="0.0013349" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper3/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="link_color">
+        <color
+          rgba="0.41 0.94 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper3/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.02322 -0.03 0.04"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.57"
+      effort="100"
+      velocity="3.14" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.083543 0.044291 0.03"
+        rpy="0 0 0" />
+      <mass
+        value="0.25411" />
+      <inertia
+        ixx="0.00069675"
+        ixy="-0.00055583"
+        ixz="4.8634E-20"
+        iyy="0.00070744"
+        iyz="1.6039E-20"
+        izz="0.0013349" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper3/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="link_color">
+        <color
+          rgba="0.41 0.94 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://gripper3/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="-0.02322 -0.03 0.04"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="link1" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-10"
+      upper="1.57"
+      effort="100"
+      velocity="3.14" />
+    <mimic
+      joint="joint2"
+      multiplier="-1"
+      offset="0" />
+  </joint>
+</robot>

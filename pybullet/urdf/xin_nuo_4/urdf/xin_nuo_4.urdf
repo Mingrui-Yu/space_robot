@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="xin_nuo_4">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="1.63500956950103E-15 1.79842914118884 -4.39273821260757E-15"
+        rpy="0 0 0" />
+      <mass
+        value="3572.17862833059" />
+      <inertia
+        ixx="5523.90920491209"
+        ixy="-1.87279787855437E-13"
+        ixz="0"
+        iyy="2973.55182691481"
+        iyz="3.54233269817698E-12"
+        izz="5172.91209753096" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="base_color">
+        <color
+          rgba="0.67451 0.564706 0.027451 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="tian_xian1">
+    <inertial>
+      <origin
+        xyz="3.10862446895044E-15 1.32102955433489 -0.3"
+        rpy="0 0 0" />
+      <mass
+        value="24.6143539276408" />
+      <inertia
+        ixx="19.2982971395518"
+        ixy="-2.47629989368925E-14"
+        ixz="-1.77635683940025E-15"
+        iyy="9.59788040316597"
+        iyz="2.5000514929076E-17"
+        izz="9.7106748672165" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/tian_xian1.STL" />
+      </geometry>
+      <material
+        name="tianxian_color">
+        <color
+          rgba="0.701961 0.701961 0.701961 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/tian_xian1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_tian_xian1"
+    type="revolute">
+    <origin
+      xyz="-0.3 0.4 -1.24"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="tian_xian1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="tian_xian2">
+    <inertial>
+      <origin
+        xyz="-8.88178419700125E-16 1.32102955433489 0.299999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="24.6143539276408" />
+      <inertia
+        ixx="19.2982971395518"
+        ixy="6.21241189425657E-15"
+        ixz="-4.44089209850063E-15"
+        iyy="9.59788040316597"
+        iyz="2.20791999699846E-16"
+        izz="9.71067486721651" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/tian_xian2.STL" />
+      </geometry>
+      <material
+        name="tianxian_color">
+        <color
+          rgba="0.701961 0.701961 0.701961 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/tian_xian2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_tian_xian2"
+    type="revolute">
+    <origin
+      xyz="0.3 0.4 1.24"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="tian_xian2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="zhuan_zhou1">
+    <inertial>
+      <origin
+        xyz="5.87733511858701E-09 1.5524088681218E-09 0.0541943118686843"
+        rpy="0 0 0" />
+      <mass
+        value="0.0724314369507897" />
+      <inertia
+        ixx="0.00024562467356761"
+        ixy="-6.22295570861744E-11"
+        ixz="3.62415583383523E-11"
+        iyy="0.000241882448707953"
+        iyz="-1.59294704277724E-11"
+        izz="0.000177147693159084" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/zhuan_zhou1.STL" />
+      </geometry>
+      <material
+        name="q">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/zhuan_zhou1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_zhuanzhou1"
+    type="revolute">
+    <origin
+      xyz="-1.05 1.8 0"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="zhuan_zhou1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="lianjiegan1">
+    <inertial>
+      <origin
+        xyz="-1.16039493270321 1.59644455433039E-08 -0.0300007147043297"
+        rpy="0 0 0" />
+      <mass
+        value="0.265926031032753" />
+      <inertia
+        ixx="0.11527621082924"
+        ixy="-3.82076707324128E-09"
+        ixz="1.07051601500041E-07"
+        iyy="0.208272054170889"
+        iyz="9.21666483465507E-10"
+        izz="0.0930635039944864" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/lianjiegan1.STL" />
+      </geometry>
+      <material
+        name="q">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/lianjiegan1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_lianjiegan1"
+    type="revolute">
+    <origin
+      xyz="0.0300000000000219 0 0.0949999999999995"
+      rpy="0 1.5707963267949 0" />
+    <parent
+      link="zhuan_zhou1" />
+    <child
+      link="lianjiegan1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="1fanban1">
+    <inertial>
+      <origin
+        xyz="-1.74223879182712 2.82060278899987E-05 -1.14500000000002"
+        rpy="0 0 0" />
+      <mass
+        value="5.85048235803155" />
+      <inertia
+        ixx="2.56678101098279"
+        ixy="0.000282129677435218"
+        ixz="-1.0769163338864E-14"
+        iyy="8.22372211659584"
+        iyz="-1.66805450922469E-16"
+        izz="5.65756087252585" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/1fanban1.STL" />
+      </geometry>
+      <material
+        name="fanban_color">
+        <color
+          rgba="0.098039 0.039216 0.392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/1fanban1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1fanban1"
+    type="revolute">
+    <origin
+      xyz="-1.73205080756888 0 1.11500000000001"
+      rpy="0 0 0" />
+    <parent
+      link="lianjiegan1" />
+    <child
+      link="1fanban1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="1fanban2">
+    <inertial>
+      <origin
+        xyz="-1.74223879182711 -2.82060278828933E-05 -1.17"
+        rpy="0 0 0" />
+      <mass
+        value="5.85048235803157" />
+      <inertia
+        ixx="2.56678101098281"
+        ixy="-0.000282129677417368"
+        ixz="7.99360577730113E-15"
+        iyy="8.22372211659588"
+        iyz="6.04333344257838E-16"
+        izz="5.65756087252587" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/1fanban2.STL" />
+      </geometry>
+      <material
+        name="fanban_color">
+        <color
+          rgba="0.098039 0.039216 0.392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/1fanban2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1fanban2"
+    type="revolute">
+    <origin
+      xyz="-3.48 0.0375000000000068 0.0249999999999766"
+      rpy="0 0 0" />
+    <parent
+      link="1fanban1" />
+    <child
+      link="1fanban2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="1fanban3">
+    <inertial>
+      <origin
+        xyz="1.74223879182711 2.82060278880003E-05 -1.12"
+        rpy="0 0 0" />
+      <mass
+        value="5.85048235803157" />
+      <inertia
+        ixx="2.5667810109828"
+        ixy="-0.000282129677435944"
+        ixz="-1.36557432028894E-14"
+        iyy="8.22372211659587"
+        iyz="1.88160880153594E-16"
+        izz="5.65756087252587" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/1fanban3.STL" />
+      </geometry>
+      <material
+        name="fanban_color">
+        <color
+          rgba="0.098039 0.039216 0.392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/1fanban3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1fanban3"
+    type="revolute">
+    <origin
+      xyz="-3.48 -0.0374999999999939 -2.29"
+      rpy="3.14159265358979 0 3.14159265358979" />
+    <parent
+      link="1fanban2" />
+    <child
+      link="1fanban3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="1fanban4">
+    <inertial>
+      <origin
+        xyz="-1.7422387918271 -2.82060278831153E-05 -1.12"
+        rpy="0 0 0" />
+      <mass
+        value="5.85048235803156" />
+      <inertia
+        ixx="2.5667810109828"
+        ixy="-0.00028212967741823"
+        ixz="1.17683640610267E-14"
+        iyy="8.22372211659584"
+        iyz="-1.28772571324304E-16"
+        izz="5.65756087252586" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/1fanban4.STL" />
+      </geometry>
+      <material
+        name="fanban_color">
+        <color
+          rgba="0.098039 0.039216 0.392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/1fanban4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1fanban4"
+    type="revolute">
+    <origin
+      xyz="3.48 0.037500000000005 -2.24"
+      rpy="3.14159265358979 0 -3.14159265358979" />
+    <parent
+      link="1fanban3" />
+    <child
+      link="1fanban4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="zhuanzhou_2">
+    <inertial>
+      <origin
+        xyz="5.8773346744978E-09 1.55240953425562E-09 0.0541943118686858"
+        rpy="0 0 0" />
+      <mass
+        value="0.0724314369507896" />
+      <inertia
+        ixx="0.00024562467356761"
+        ixy="-6.22295571017868E-11"
+        ixz="3.62415584806539E-11"
+        iyy="0.000241882448707952"
+        iyz="-1.5929470513993E-11"
+        izz="0.000177147693159084" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/zhuanzhou_2.STL" />
+      </geometry>
+      <material
+        name="q">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/zhuanzhou_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_zhuanzhou_2"
+    type="revolute">
+    <origin
+      xyz="1.05 1.8 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="zhuanzhou_2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="lianjiegan2">
+    <inertial>
+      <origin
+        xyz="1.16039493270321 1.59644431008132E-08 -0.0299992852956437"
+        rpy="0 0 0" />
+      <mass
+        value="0.265926031032765" />
+      <inertia
+        ixx="0.115276210829243"
+        ixy="3.8207673979026E-09"
+        ixz="1.07051601520858E-07"
+        iyy="0.208272054170895"
+        iyz="-9.21666583421341E-10"
+        izz="0.0930635039944895" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/lianjiegan2.STL" />
+      </geometry>
+      <material
+        name="q">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/lianjiegan2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_lianjiegan2"
+    type="revolute">
+    <origin
+      xyz="-0.0299999999999936 0 0.0950000000000022"
+      rpy="3.14159265358979 -1.5707963267949 0" />
+    <parent
+      link="zhuanzhou_2" />
+    <child
+      link="lianjiegan2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="2fanban1">
+    <inertial>
+      <origin
+        xyz="1.74223879182711 2.82060278837815E-05 -1.145"
+        rpy="0 0 0" />
+      <mass
+        value="5.85048235803155" />
+      <inertia
+        ixx="2.56678101098279"
+        ixy="-0.000282129677418832"
+        ixz="-1.36557432028894E-14"
+        iyy="8.22372211659584"
+        iyz="1.87636509332103E-16"
+        izz="5.65756087252586" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/2fanban1.STL" />
+      </geometry>
+      <material
+        name="fanban_color">
+        <color
+          rgba="0.098039 0.039216 0.392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/2fanban1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2fanban1"
+    type="revolute">
+    <origin
+      xyz="1.73205080756888 0 1.11500000000001"
+      rpy="0 0 0" />
+    <parent
+      link="lianjiegan2" />
+    <child
+      link="2fanban1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="2fanban2">
+    <inertial>
+      <origin
+        xyz="-1.74223879182711 -2.82060278860019E-05 -1.12"
+        rpy="0 0 0" />
+      <mass
+        value="5.85048235803158" />
+      <inertia
+        ixx="2.56678101098281"
+        ixy="-0.000282129677431902"
+        ixz="1.4432899320127E-14"
+        iyy="8.22372211659589"
+        iyz="-1.53790961139966E-16"
+        izz="5.65756087252588" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/2fanban2.STL" />
+      </geometry>
+      <material
+        name="fanban_color">
+        <color
+          rgba="0.098039 0.039216 0.392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/2fanban2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2fanban2"
+    type="revolute">
+    <origin
+      xyz="3.48 0.0374999999999959 -2.265"
+      rpy="3.14159265358979 0 -3.14159265358979" />
+    <parent
+      link="2fanban1" />
+    <child
+      link="2fanban2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="2fanban3">
+    <inertial>
+      <origin
+        xyz="-1.7422 2.8206E-05 -1.12"
+        rpy="0 0 0" />
+      <mass
+        value="5.8505" />
+      <inertia
+        ixx="2.5668"
+        ixy="0.00028213"
+        ixz="-7.8826E-15"
+        iyy="8.2237"
+        iyz="-3.227E-17"
+        izz="5.6576" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/2fanban3.STL" />
+      </geometry>
+      <material
+        name="fanban_color">
+        <color
+          rgba="0.098039 0.039216 0.392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/2fanban3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2fanban3"
+    type="revolute">
+    <origin
+      xyz="-3.48 -0.0375000000000021 0"
+      rpy="0 0 0" />
+    <parent
+      link="2fanban2" />
+    <child
+      link="2fanban3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="2fanban4">
+    <inertial>
+      <origin
+        xyz="1.74223879182711 -2.82060278880003E-05 -1.12"
+        rpy="0 0 0" />
+      <mass
+        value="5.85048235803157" />
+      <inertia
+        ixx="2.56678101098281"
+        ixy="0.000282129677433444"
+        ixz="1.26565424807268E-14"
+        iyy="8.22372211659588"
+        iyz="1.49980812628965E-16"
+        izz="5.65756087252587" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/2fanban4.STL" />
+      </geometry>
+      <material
+        name="fanban_color">
+        <color
+          rgba="0.098039 0.039216 0.392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/2fanban4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2fanban4"
+    type="revolute">
+    <origin
+      xyz="-3.48 0.0374999999999959 -2.24"
+      rpy="3.14159265358979 0 -3.14159265358979" />
+    <parent
+      link="2fanban3" />
+    <child
+      link="2fanban4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.29"
+      upper="6.29"
+      effort="10000"
+      velocity="10000" />
+  </joint>
+  <link
+    name="wei_pen_guan">
+    <inertial>
+      <origin
+        xyz="-2.92828918522306E-16 -3.06453144872665E-17 -0.163004078996314"
+        rpy="0 0 0" />
+      <mass
+        value="1.6357458859783" />
+      <inertia
+        ixx="0.0222430877220274"
+        ixy="-1.73472347597681E-18"
+        ixz="-6.91527998091055E-18"
+        iyy="0.0222430877220275"
+        iyz="6.63442056349367E-19"
+        izz="0.0205306390827465" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/wei_pen_guan.STL" />
+      </geometry>
+      <material
+        name="weipenguan_color">
+        <color
+          rgba="0.811765 0.678431 0.145098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/wei_pen_guan.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_wei_pen_guan"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="wei_pen_guan" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="dui_jie_huan">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/dui_jie_huan.STL" />
+      </geometry>
+      <material
+        name="duijiehuan_color">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_nuo_4/meshes/dui_jie_huan.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_dui_jie_huan"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="dui_jie_huan" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

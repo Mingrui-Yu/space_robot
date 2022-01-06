@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="cutter">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 0.000131288128801255 0.14933332391133"
+        rpy="0 0 0" />
+      <mass
+        value="1.11388593420623" />
+      <inertia
+        ixx="0.0183745836145232"
+        ixy="5.68067392054574E-20"
+        ixz="-2.52441420322314E-18"
+        iyy="0.0200204795749076"
+        iyz="1.96449052887922E-05"
+        izz="0.00267273481296689" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cutter/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="cutter_color">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cutter/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
